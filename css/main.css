@@ -1,0 +1,124 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+html, body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #20255a;
+    font-family: Roboto, arial, sans-serif;
+    transition: all 0.2s ease-in-out;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.skills {
+    width: 100%;
+    min-height: 90%;
+}
+
+header {
+    margin: 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.profile {
+    position: absolute;
+    margin: 1rem;
+    right: 0;
+}
+
+.projects {
+    position: absolute;
+    margin: 1rem;
+    left: 0;
+}
+
+.featured {
+    border: 1px solid white;
+}
+
+.social {
+    cursor: pointer;
+    color: white;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    text-decoration: none;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 767px) {
+    .content {
+        padding: 0 10px;
+    }
+
+    .profile-card {
+        height: auto;
+        max-height: none;
+    }
+
+    .profile-photo {
+        margin: 0 auto 10px;
+        padding: 0;
+        height: auto;
+        max-height: none;
+        min-width: 170px;
+        width: 100%;
+        max-width: none;
+    }
+
+    .profile-info {
+        text-align: center;
+    }
+
+    .project-cards {
+        justify-content: center;
+    }
+
+    .card-content {
+        flex-direction: column;
+    }
+
+    .card-content .col img {
+        display: none;
+    }
+
+    .card-content .col.left {
+        margin: 10px;
+        padding: 0;
+    }
+
+    .card-content .col h2 {
+        font-size: 2em;
+        line-height: 1;
+        margin: 60px 0 30px;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .content {
+        width: 750px
+    }
+}
+
+@media (min-width: 992px) {
+    .content {
+        width: 970px
+    }
+}
+
+@media (min-width: 1200px) {
+    .content {
+        width: 1170px
+    }
+}
